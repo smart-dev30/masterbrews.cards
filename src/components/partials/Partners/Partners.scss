@@ -1,0 +1,49 @@
+.partnerPage {
+  .followBox {
+    background-image: url(/background-image.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .partnerBox {
+    .partner-container {
+      .partner-item {
+        min-height: 540px;
+
+        a {
+          width: calc(100% - 64px);
+
+          @media (max-width: 767px) {
+            width: 100%;
+          }
+        }
+
+        @media (max-width: 1023px) {
+          min-height: 570px;
+        }
+
+        @media (max-width: 767px) {
+          min-height: auto;
+        }
+      }
+    }
+  }
+
+  .iconContainer {
+    cursor: pointer;
+    margin: 0 10px;
+    border-radius: 50%;
+    padding: 5px;
+    height: 45px;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+
+    svg {
+      width: 25px;
+      height: auto;
+    }
+  }
+}
